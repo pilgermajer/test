@@ -1,1 +1,288 @@
-q
+\documentclass[oneside,a4paper,9pt]{article}
+\renewcommand{\baselinestretch}{1.5} 
+\usepackage{indentfirst}
+\setlength{\parindent}{5mm}
+\usepackage{mathptmx}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{color}
+\usepackage[top=40mm, bottom=25mm, left=35mm, right=25mm, paperwidth=210mm, paperheight=297mm]{geometry}
+\usepackage{graphicx}
+\usepackage{ltxtable, tabularx, longtable} 
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[magyar]{babel}
+\usepackage{listings}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\rhead{Szakdolgozat címe}
+\lhead{}
+%\usepackage{showframe}
+\title {Diplomamunka}
+%\author{Szerző:Bencsik Gergely\\Témavezető: Dr. Sáti Zoltán PhD.}
+%\subtitle{syncEQ - Elektroakusztikai adaptív szűrő}
+\setlength{\hoffset}{-1in} 
+\setlength{\voffset}{-1in}
+\topmargin=00mm
+\oddsidemargin=35mm
+\headheight=30mm
+\headsep=10mm
+\marginparsep=0mm
+\marginparwidth=0mm
+\textwidth=150mm
+\textheight=232mm
+\begin{document}
+	%\setcounter{tocdepth}{0}
+	%\pagenumbering{arabic}
+	\thispagestyle{empty}
+	\begin{center}
+		\LARGE
+		TÖRZSSZÁM\\
+		\Huge
+		\vspace{80mm}
+		DIPLOMAMUNKA\\
+		\vspace{90mm}
+		\Large
+		Gipsz Jakab\\
+		\bigskip
+		2019
+	\end{center}
+	\pagebreak
+	\thispagestyle{empty}
+	\begin{center}
+		\Large
+		\begin{spacing}{1}
+			Pécsi Tudományegyetem\\
+			Műszaki és Informatikai Kar\\
+			Mérnök Informatikus MSc. Szak\\
+		\end{spacing}
+		\Huge
+		\vspace{80mm}
+		{\bf DIPLOMAMUNKA}\\
+		\bigskip
+		\Large
+		Szakdolgozat Címe\\
+		\vspace{60mm}
+		\Large
+		\begin{spacing}{1}
+			Készítette: Gipsz Jakab\\
+			Témavezető: Dr. Szürke Gandalf\\
+		\end{spacing}
+		\bigskip
+		\bigskip
+		Pécs
+	\end{center}
+	
+	\pagebreak
+	\thispagestyle{empty}
+	
+	\begin{center}
+		\bf
+		\begin{tabularx}{\textwidth}{
+				>{\hsize=0.5\hsize}X
+				>{\hsize=0.2\hsize}X
+				>{\hsize=0.3\hsize}X}
+			PÉCSI TUDOMÁNYEGYETEM & & Diplomamunka száma:\\
+			MŰSZAKI ÉS INFORMATIKAI KAR & & TÖRZSSZÁM\\
+			Mérnök Informatikus MSc. Szak & & \\
+		\end{tabularx}
+	\end{center}
+	\vspace{20mm}
+	\begin{center}
+		\bf
+		Diplomamunka\\
+		\bigskip\bigskip
+		..................................................................................\\
+		hallgató részére
+		\bigskip\bigskip
+	\end{center}
+	\noindent
+	A záróvizsgát megelőzően diplomamunkát kell benyújtania, amelynek témáját és feladatait az alábbiak szerint határozom meg:\\
+	
+	\noindent
+	\textbf{Téma:}\\
+	Téma címe.\\
+	
+	\noindent
+	\textbf{Feladat:}\\
+	Feladat leírása.\\
+	
+	\noindent
+	A diplomamunka készítéséért felelős tanszék:\\
+	............................................................................................\\
+	
+	\noindent
+	Külső konzulens:\\ ............................................................................................
+	\\munkahelye:\\ ............................................................................................\\
+	
+	\noindent
+	Témavezető: Dr. Szürke Gandalf\\
+	munkahelye: Pécsi Tudományegyetem, Műszaki és Informatikai Kar
+	\\
+	\bigskip
+	\bigskip
+	\begin{center}
+		\begin{tabularx}{\textwidth}{
+				>{\hsize=0.5\hsize}X
+				>{\hsize=0.3\hsize}X
+				>{\hsize=0.2\hsize}X}
+			Pécs, 2019. .................. & & .............................. \\
+			& & Dr. Iványi Péter
+		\end{tabularx}
+	\end{center}
+	
+	\pagebreak
+	\thispagestyle{empty}
+	
+	\begin{center}
+		\Large
+		HALLGATÓI NYILATKOZAT\\
+	\end{center}
+	\vspace{30mm}
+	\noindent \normalsize
+	Alulírott szigorló hallgató kijelentem, hogy a diplomamunka saját munkám eredménye. A felhasznált szakirodalmat és eszközöket azonosíthatóan közöltem. Egyéb jelentősebb segítséget nem vettem igénybe.\\
+	Az elkészült diplomamunkában talált eredményeket a feladatot kiíró intézmény saját céljaira térítés nélkül felhasználhatja.\\
+	\vspace{30mm}
+	\begin{center}
+		\begin{tabularx}{\textwidth}{
+				>{\hsize=0.5\hsize}X
+				>{\hsize=0.3\hsize}X
+				>{\hsize=0.2\hsize}X}
+			Pécs, 2019. .................. & & .............................. \\
+			& & Gipsz Jakab
+		\end{tabularx}
+	\end{center}
+	
+	\pagebreak
+	\pagenumbering{Roman}
+	\setcounter{page}{1}
+	\tableofcontents
+	
+	\pagebreak
+	
+	\pagenumbering{arabic}
+	\setcounter{page}{1}
+	
+	\section{Köszönetnyilvánítás}
+	Köszönetnyílvánítás helye...
+	
+	\pagebreak
+	
+	\section{Előszó}
+	Előszó helye...
+	\pagebreak
+	
+	\section{Példák}
+	
+	\subsection{Ábra}
+	
+	\begin{center}
+		\includegraphics[scale=3]{ptemik.jpg}\\
+		1. ábra. Ábra beillesztésének módja.\\
+	\end{center}
+	
+	\subsection{Lista}
+	
+	\subsubsection{Rendezetlen lista}
+	\begin{itemize}
+		\item Első pont.
+		\item Második pont.
+		\item Harmadik pont.
+	\end{itemize}
+	
+	\subsubsection{Számozott lista}
+	\begin{enumerate}
+		\item Első pont.
+		\item Második pont.
+		\item Harmadik pont.
+	\end{enumerate}
+	
+	\subsubsection{Kombinált lista}
+	\begin{enumerate}
+		\item Első pont.
+		\item Második pont.
+		\item Harmadik pont.
+		\begin{enumerate}
+			\item Első pont.
+			\item Második pont.
+			\item Harmadik pont.
+		\end{enumerate}
+	\end{enumerate}
+	
+	\subsection{Táblázatok}
+	
+	Érdemes az alábbi példákbaban áttekinteni a táblázat paraméterezését. Egy-egy karakter vagy sor hozzáadásával könnyen átalakítható és pontosan méretezhető a táblázat.
+	\footnote{Kérdésekkel bátran tessék keresni: becsegergely@gmail.com - Bencsik Gergely. (Ha a google nem segített.)}
+	
+	\bigskip
+	
+	\begin{center}
+		\small
+		\begin{tabularx}{\textwidth}{
+				|>{\hsize=0.5\hsize}X|
+				>{\hsize=0.5\hsize}X|}
+			\hline
+			1 & 2 \\ \hline
+			3 & 4 \\ \hline
+		\end{tabularx}
+	\end{center}
+	
+	\begin{center}
+		\small
+		\begin{tabularx}{\textwidth}{
+				>{\hsize=0.5\hsize}X|
+				>{\hsize=0.5\hsize}X}
+			1 & 2 \\ \hline
+			3 & 4 \\ 
+		\end{tabularx}
+	\end{center}
+	
+	\begin{center}
+		\small
+		\begin{tabularx}{\textwidth}{
+				>{\hsize=0.1\hsize}X|
+				>{\hsize=0.45\hsize}X
+				>{\hsize=0.45\hsize}X|}
+			1 & 2 & 3 \\ \hline
+			4 & 5 & 6 \\ 
+		\end{tabularx}
+	\end{center}
+	
+	\subsection{Forráskód}
+	
+	\begin{lstlisting}[
+		language=C,
+		frame=single,
+		showspaces=false,
+		showstringspaces=false,
+		numbers=left,
+		numbersep=2mm,
+		breaklines=true,
+		tabsize=1,
+		title=Forrás: main.c]
+		#include <...>
+		
+		void main()
+		{
+			...
+		}
+	\end{lstlisting}
+	
+	\subsection{Formula}
+	
+	$$ E_t = \dfrac{1}{2\pi} \int_{-\infty}^{\infty} |\underline{H}(\omega)^2|\, \mathrm{d}\omega $$
+	
+	\bigskip
+	
+	\pagebreak
+	\section{Irodalomjegyzék}
+	
+	\begin{enumerate}
+		\item Cím1
+		\item Cím2
+	\end{enumerate}
+	
+\end{document}
+
