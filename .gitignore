@@ -8,3 +8,4 @@ _minted*
 *.out
 *.toc
 *.dvi
+main.synctex(busy)
